@@ -7,7 +7,7 @@
 
 <head>
   <title>Outfitwale</title>
-  <!-- Required meta tags -->
+  <!-- Required meta  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -139,8 +139,7 @@
 
 
 
-          <div class="card-body">
-
+          <!-- <div class="card-body">
             <div class="container mt-5">
               <form action="pay2.php" method="post" >
                 <div class="form-group">
@@ -165,154 +164,161 @@
 
               </form>
             </div>
-          </div>
+          </div> -->
 
 
           <div class="card-body">
-            <h4 class="mb-3">Billing address</h4>
-            <form class="needs-validation" validate name="shoping" id="shoping" action="pay2.php" method="post">
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <label style="color:#ef452d;" for="firstName" class="form-label">First
-                    name</label>
-                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your Name"
-                    value="" required>
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <label style="color:#ef452d;" for="lastName" class="form-label">Last
-                    name</label>
-                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name"
-                    value="" required>
-                  <div class="invalid-feedback">
-                    Valid last name is required.
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label style="color:#ef452d;" for="Number" class="form-label">Mobile
-                    Number</label>
-                  <div class="input-group has-validation">
-
-                    <input type="number" class="form-control" id="Number" name="phone" placeholder="Your MobileNumber"
-                      required>
-                    <div class="invalid-feedback">
-                      Your Number is required.
+            <div class="container mt-5">
+              <h4 class="mb-3">Billing address</h4>
+              <form action="pay2.php" method="post" class="needs-validation" validate name="shoping" id="shoping" >
+                <div class="form-group">
+                  <div class="row g-3"> 
+                    <div class="col-sm-6">
+                      <label style="color:#ef452d;" for="firstName" class="form-label">First
+                        name</label>
+                      <input type="text" class="form-control" id="firstName" name="customername" placeholder="Your Name"
+                        value="" required>
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
                     </div>
+
+                    <div class="col-sm-6">
+                      <label style="color:#ef452d;" for="lastName" class="form-label">Last
+                        name</label>
+                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name"
+                        value="" required>
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+
+                      <div class="col-12">
+                        <!-- <label style="color:#ef452d;" for="Number" class="form-label">Mobile
+                          Number</label> -->
+                        <div class="input-group has-validation">
+                            Contact No: <input class="form-control" id="phone" type="number" name="phone" placeholder="Your Mobile Number"
+                              required>
+                          <div class="invalid-feedback">
+                            Your Number is required.
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <div class="col-12">
+                      <label style="color:#ef452d;" for="emailll" class="form-label">Email </label>
+                      <input type="email" name="email" class="form-control" id="emailll" name="email" placeholder="you@example.com">
+                      <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label style="color:#ef452d;" for="address" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St"
+                        required>
+                      <div class="invalid-feedback">
+                        Please enter your shipping address.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label style="color:#ef452d;" for="address2" class="form-label">Address 2 (Near
+                        By)<span class="text-muted"></span></label>
+                      <input type="text" class="form-control" id="address2" name="" placeholder="Apartment or suite">
+                    </div>
+
+                    <div class="col-md-5">
+                      <label style="color:#ef452d;" for="country" class="form-label">Country</label>
+                      <select class="form-select" id="country" name="country" required>
+                        <option value="">Choose...</option>
+                        <option>India</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                      <label style="color:#ef452d;" for="State" class="form-label">State</label>
+                      <input type="text" class="form-control" id="State" name="State" placeholder="Your State" value=""
+                        required>
+
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <label style="color:#ef452d;" for="zip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip Code" required>
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                      <label style="color:#ef452d;" for="yoursize" class="form-label">Your Size</label>
+                      <select class="form-select" id="yoursize" name="yoursize" required>
+                        <option value="">Choose...</option>
+                        <option>Small (28)</option>
+                        <option>Medium (29)</option>
+                        <option>Large (30)</option>
+                        <option>X-Large (31)</option>
+                        <option>XX-Large (32)</option>
+                      </select>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                      <label style="color:#ef452d;" for="yourcolor" class="form-label">Color</label>
+                      <select class="form-select" id="yourcolor" name="yourcolor" required>
+                        <option value="">Choose...</option>
+                        <option style="background-color: black; color: rgb(229, 232, 35);">Black
+                        </option>
+                        <option style="background-color: white; color: red;">White</option>
+                        <option style="background-color: yellow; color: rgb(41, 36, 36);">Yellow
+                        </option>
+                        <option style="background-color: pink; color: rgb(92, 113, 198);">Pink</option>
+                        <option style="background-color: lightgreen; color: rgb(99, 59, 93);">
+                          Light-Green</option>
+                      </select>
+
+                    </div>
+                  
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-address" name="same-address">
+                      <label style="color:#ef452d;" class="form-check-label" for="same-address">Shipping
+                        address
+                        is the same as my
+                        billing address</label>
+                    </div>
+
+
+
+                    <hr class="my-4">
+                    <div class="d-flex">
+                      <h3 STYLE="COLOR:RED; text-align: left !important;">TOTAL CART VALUE : <svg
+                          xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                          class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                          <path
+                            d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z" />
+                        </svg></h3>
+                      <h4><textarea style="color:red;" class="total-price" name="price" readonly rows="1" cols="6">0</textarea></h4>
+                    </div>
+
+                    </h3>
+                    <button id="button1111" type="submit" class="btn tn-success">Pay Now</button>
+
+                    
                   </div>
                 </div>
-
-                <div class="col-12">
-                  <label style="color:#ef452d;" for="emailll" class="form-label">Email </label>
-                  <input type="email" class="form-control" id="emailll" name="email" placeholder="you@example.com">
-                  <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label style="color:#ef452d;" for="address" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St"
-                    required>
-                  <div class="invalid-feedback">
-                    Please enter your shipping address.
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label style="color:#ef452d;" for="address2" class="form-label">Address 2 (Near
-                    By)<span class="text-muted"></span></label>
-                  <input type="text" class="form-control" id="address2" name="" placeholder="Apartment or suite">
-                </div>
-
-                <div class="col-md-5">
-                  <label style="color:#ef452d;" for="country" class="form-label">Country</label>
-                  <select class="form-select" id="country" name="country" required>
-                    <option value="">Choose...</option>
-                    <option>India</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid country.
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-
-                  <label style="color:#ef452d;" for="State" class="form-label">State</label>
-                  <input type="text" class="form-control" id="State" name="State" placeholder="Your State" value=""
-                    required>
-
-                  <div class="invalid-feedback">
-                    Please provide a valid state.
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <label style="color:#ef452d;" for="zip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip Code" required>
-                  <div class="invalid-feedback">
-                    Zip code required.
-                  </div>
-                </div>
-
-
-                <div class="col-sm-6">
-                  <label style="color:#ef452d;" for="yoursize" class="form-label">Your Size</label>
-                  <select class="form-select" id="yoursize" name="yoursize" required>
-                    <option value="">Choose...</option>
-                    <option>Small (28)</option>
-                    <option>Medium (29)</option>
-                    <option>Large (30)</option>
-                    <option>X-Large (31)</option>
-                    <option>XX-Large (32)</option>
-                  </select>
-                </div>
-
-
-                <div class="col-sm-6">
-                  <label style="color:#ef452d;" for="yourcolor" class="form-label">Color</label>
-                  <select class="form-select" id="yourcolor" name="yourcolor" required>
-                    <option value="">Choose...</option>
-                    <option style="background-color: black; color: rgb(229, 232, 35);">Black
-                    </option>
-                    <option style="background-color: white; color: red;">White</option>
-                    <option style="background-color: yellow; color: rgb(41, 36, 36);">Yellow
-                    </option>
-                    <option style="background-color: pink; color: rgb(92, 113, 198);">Pink</option>
-                    <option style="background-color: lightgreen; color: rgb(99, 59, 93);">
-                      Light-Green</option>
-                  </select>
-
-                </div>
-              </div>
-              <hr class="my-4">
-
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="same-address" name="same-address">
-                <label style="color:#ef452d;" class="form-check-label" for="same-address">Shipping
-                  address
-                  is the same as my
-                  billing address</label>
-              </div>
-
-
-
-              <hr class="my-4">
-              <h3 STYLE="COLOR:RED; text-align: left !important;">TOTAL CART VALUE : <svg
-                  xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                  class="bi bi-currency-rupee" viewBox="0 0 16 16">
-                  <path
-                    d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z" />
-                </svg>
-
-              </h3>
-              <button type="submit" class="btn tn-success">Pay Now</button>
-
-            </form>
-
+              </form>
+            </div>
           </div>
         </div>
         <!-- <div style="margin-top:20px; display:none;"> -->
@@ -350,6 +356,48 @@
       const cf = new Cashfree(paymentSessionId);
       cf.redirect();
     };
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    import { getDatabase, set, ref ,push, child, onValue} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.s";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCSbFKPGi-rLtnXTawiVan7NyaI1IPdNA4",
+      authDomain: "email-db-78b89.firebaseapp.com",
+      projectId: "email-db-78b89",
+      storageBucket: "email-db-78b89.appspot.com",
+      messagingSenderId: "64991394301",
+      appId: "1:64991394301:web:9f2e54a11847f3a970c194"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Initialize Realtime Database and get a reference to the service
+    const database = getDatabase(app);
+
+
+    submit.addEventListener('click',(e) => {
+
+        //fname, email, adr, city
+        var firstName = document.getElementById('first-name').value;  
+        var emailll = document.getElementById('email').value;  
+        var phone = document.getElementById('phone').value; 
+
+        const userId = push(child(ref(database), 'users')).key;
+
+        set(ref(database, 'users/' + userId), {
+        firstName: firstName,
+        emailll: emailll,
+        phone : phone,
+  });
+  alert('saved');
+    });
+
 
   </script>
 </body>
